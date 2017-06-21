@@ -1,5 +1,5 @@
-//Ò³ÃæÌØĞ§
-//µ¯³ö²ã
+//é¡µé¢ç‰¹æ•ˆ
+//å¼¹å‡ºå±‚
 $(document).ready(function(c) {
     $('.alert-close').on('click', function(c){
         $('.message').fadeOut('slow', function(c){
@@ -24,7 +24,7 @@ $(document).ready(function(c) {
     });
 });
 
-//tab²å¼ş
+//tabæ’ä»¶
 $(document).ready(function () {
     $('#horizontalTab').easyResponsiveTabs({
         type: 'default', //Types: default, vertical, accordion
@@ -33,7 +33,7 @@ $(document).ready(function () {
     });
 });
 
-/*µ¼º½µÄ¹Ø±Õ°´Å¥*/
+/*å¯¼èˆªçš„å…³é—­æŒ‰é’®*/
 $(document).ready(function () {
     $('#activator').click(function(){
         $('#box').animate({'left':'0px'},500);

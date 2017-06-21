@@ -1,4 +1,4 @@
-//¶¨Òå²úÆ·¶ÔÏó
+//å®šä¹‰äº§å“å¯¹è±¡
 
 var Cart = Class.extend({
     init: function(){
@@ -7,11 +7,11 @@ var Cart = Class.extend({
         this.allPrice=2000
     },
     bindBasic:function(){
-        //°ó¶¨
+        //ç»‘å®š
         $('.cartsum').html(this.getSum())
         $('#cartprice').html(this.getAllPrice())
     },
-    //°ó¶¨²úÆ·ÁĞ±í,Ã¿´Îµã»÷µ½¹ºÎï³µÖ´ĞĞµÄ·½·¨
+    //ç»‘å®šäº§å“åˆ—è¡¨,æ¯æ¬¡ç‚¹å‡»åˆ°è´­ç‰©è½¦æ‰§è¡Œçš„æ–¹æ³•
     bindList:function(){
         var str=''
         for(var i= 0,len=this.products.length;i<len;i++){
@@ -28,14 +28,14 @@ var Cart = Class.extend({
         $('.shopping_cart').html(str)
 
     },
-    /*½áËã*/
+    /*ç»“ç®—*/
     calcalate:function(){},
-    /*»ñÈ¡²úÆ·¸öÊı*/
+    /*è·å–äº§å“ä¸ªæ•°*/
     getSum:function(){
         this.sum=this.products.length;
         return this.sum;
     },
-    /*»ñÈ¡²úÆ·×Ü¼Û*/
+    /*è·å–äº§å“æ€»ä»·*/
     getAllPrice:function(){
         for(var i= 0,len=this.products.length;i<len;i++){
             this.allPrice+=this.products[i].groupbuyPrice;

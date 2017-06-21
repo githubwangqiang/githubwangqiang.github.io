@@ -1,9 +1,9 @@
-//¶¨Òå²úÆ·¶ÔÏó
+//å®šä¹‰äº§å“å¯¹è±¡
 
 var Product = Class.extend({
     init: function(){
-        this.name='HMĞİÏĞ·şµÇÉ½°ü'
-        this.description='°ô°ôµÄ£¬°ô°ôµÄ£¬µÇÉ½Ò»Á÷£¬·şÎñÒ»Á÷£¬ÄãºÃ£¬ÎÒºÃ£¬ËûÒ²ºÃ£¬Ì«°ôÁË£¬Ò»¿ÚÆøµÈÉÏÖéÄÂÀÊÂê·å'
+        this.name='HMä¼‘é—²æœç™»å±±åŒ…'
+        this.description='æ£’æ£’çš„ï¼Œæ£’æ£’çš„ï¼Œç™»å±±ä¸€æµï¼ŒæœåŠ¡ä¸€æµï¼Œä½ å¥½ï¼Œæˆ‘å¥½ï¼Œä»–ä¹Ÿå¥½ï¼Œå¤ªæ£’äº†ï¼Œä¸€å£æ°”ç­‰ä¸Šç ç©†æœ—ç›å³°'
         this.normalPrice=144
         this.groupbuyPrice=120
         this.buySum=100;
@@ -13,9 +13,9 @@ var Product = Class.extend({
             {small:'../images/s13.jpg',big:'../images/s13.jpg'}
         ]
     },
-    /*ÆÕÍ¨¹ºÂò*/
+    /*æ™®é€šè´­ä¹°*/
     buy:function(){},
-    /*°ó¶¨Í¼Æ¬ÁĞ±í*/
+    /*ç»‘å®šå›¾ç‰‡åˆ—è¡¨*/
     bindDOMImageOld:function(){
         var str=''
         for(var i= 0,len=this.images.length;i<len;i++) {
@@ -26,7 +26,7 @@ var Product = Class.extend({
         }
         $('#etalage').html(str)
 
-        /*jquery²å¼şÊµÏÖµÄ»ÃµÆÆ¬ÌØĞ§*/
+        /*jqueryæ’ä»¶å®ç°çš„å¹»ç¯ç‰‡ç‰¹æ•ˆ*/
         $('#etalage').etalage({
             thumb_image_width: 300,
             thumb_image_height: 400,
@@ -42,7 +42,7 @@ var Product = Class.extend({
         });
     },
     bindDOMImage:function(){
-        /*ÎŞĞè¶¹¶¹¼Ó¼Ó*/
+        /*æ— éœ€è±†è±†åŠ åŠ */
         var str=''
         var html=''
         html+='<li>'
@@ -55,7 +55,7 @@ var Product = Class.extend({
         }
         $('#etalage').html(str)
 
-        /*jquery²å¼şÊµÏÖµÄ»ÃµÆÆ¬ÌØĞ§*/
+        /*jqueryæ’ä»¶å®ç°çš„å¹»ç¯ç‰‡ç‰¹æ•ˆ*/
         $('#etalage').etalage({
             thumb_image_width: 300,
             thumb_image_height: 400,
@@ -70,18 +70,18 @@ var Product = Class.extend({
             etalage_show( $(this).find('option:selected').attr('class') );
         });
     },
-    /*°ó¶¨ÏêÏ¸ĞÅÏ¢*/
+    /*ç»‘å®šè¯¦ç»†ä¿¡æ¯*/
     bindDOMDetail:function(){
-        /*°ó¶¨ÔªËØ*/
+        /*ç»‘å®šå…ƒç´ */
         $('#pname').html(this.name)
         $('#description').html(this.description)
         $('#price').html(this.normalPrice)
         $('#groupPrice').html(this.groupbuyPrice)
         $('#buyCount').html(this.buySum)
     },
-    /*ÍÅ¹º*/
+    /*å›¢è´­*/
     groupBuy:function(){},
-    /*Ìí¼Óµ½¹ºÎï³µ*/
+    /*æ·»åŠ åˆ°è´­ç‰©è½¦*/
     addCart:function(){
 
     }
